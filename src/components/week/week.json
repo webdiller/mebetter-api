@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_week_weeks",
+  "info": {
+    "displayName": "Week",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Lesson": {
+      "displayName": "Lesson",
+      "type": "component",
+      "repeatable": true,
+      "component": "lesson.lesson"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "shortDescription": {
+      "type": "string"
+    }
+  }
+}
