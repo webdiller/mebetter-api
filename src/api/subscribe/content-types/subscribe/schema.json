@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subscribes",
+  "info": {
+    "singularName": "subscribe",
+    "pluralName": "subscribes",
+    "displayName": "Subscribe",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "subscribe-list-item.subscribe-list-item"
+    },
+    "buttonTitle": {
+      "type": "string"
+    }
+  }
+}

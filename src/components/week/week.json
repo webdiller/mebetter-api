@@ -6,7 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "Lesson": {
+    "lessons": {
       "displayName": "Lesson",
       "type": "component",
       "repeatable": true,

@@ -18,25 +18,56 @@
     "slug": {
       "type": "string",
       "required": true,
-      "unique": true,
-      "regex": "/\\s+/g, '_'"
+      "unique": true
     },
     "description": {
       "type": "string"
     },
     "mainImage": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images"
       ]
     },
-    "Week": {
+    "weeks": {
       "displayName": "Week",
       "type": "component",
       "repeatable": true,
       "component": "week.week"
+    },
+    "background": {
+      "type": "component",
+      "repeatable": false,
+      "component": "background.background"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "courses"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "courses"
+    },
+    "courseLenght": {
+      "type": "string"
+    },
+    "courseTime": {
+      "type": "string"
+    },
+    "shortDescription": {
+      "type": "text"
+    },
+    "proposals": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::proposal.proposal",
+      "mappedBy": "course"
     }
   }
 }

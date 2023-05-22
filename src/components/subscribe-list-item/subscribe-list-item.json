@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_subscribe_list_item_subscribe_list_items",
+  "info": {
+    "displayName": "SubscribeListItem"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

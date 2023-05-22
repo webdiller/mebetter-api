@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_background_backgrounds",
+  "info": {
+    "displayName": "Background",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "backgroundColor": {
+      "type": "string"
+    }
+  }
+}

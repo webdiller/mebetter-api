@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proposals",
+  "info": {
+    "singularName": "proposal",
+    "pluralName": "proposals",
+    "displayName": "Proposal",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "proposalTag": {
+      "type": "component",
+      "repeatable": false,
+      "component": "proposal-tag.proposal-tag"
+    },
+    "proposalFeatures": {
+      "type": "component",
+      "repeatable": true,
+      "component": "proposal-feature.proposal-feature"
+    },
+    "course": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course.course",
+      "inversedBy": "proposals"
+    }
+  }
+}

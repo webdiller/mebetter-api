@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_proposal_feature_proposal_features",
+  "info": {
+    "displayName": "proposalFeature"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

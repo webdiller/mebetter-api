@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_proposal_tag_proposal_tags",
+  "info": {
+    "displayName": "proposalTag"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
