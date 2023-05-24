@@ -23,20 +23,6 @@
     "description": {
       "type": "string"
     },
-    "mainImage": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "weeks": {
-      "displayName": "Week",
-      "type": "component",
-      "repeatable": true,
-      "component": "week.week"
-    },
     "background": {
       "type": "component",
       "repeatable": false,
@@ -68,6 +54,13 @@
       "relation": "oneToMany",
       "target": "api::proposal.proposal",
       "mappedBy": "course"
+    },
+    "weeks": {
+      "type": "dynamiczone",
+      "components": [
+        "week.week"
+      ],
+      "required": true
     }
   }
 }

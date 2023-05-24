@@ -16,8 +16,16 @@
       "type": "richtext"
     },
     "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
+      ]
+    },
+    "mainVideo": {
+      "allowedTypes": [
+        "videos"
       ],
       "type": "media",
       "multiple": false

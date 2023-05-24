@@ -6,18 +6,17 @@
   },
   "options": {},
   "attributes": {
-    "lessons": {
-      "displayName": "Lesson",
-      "type": "component",
-      "repeatable": true,
-      "component": "lesson.lesson"
-    },
     "title": {
       "type": "string",
       "required": true
     },
     "shortDescription": {
       "type": "string"
+    },
+    "lessons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::lesson.lesson"
     }
   }
 }
