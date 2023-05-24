@@ -13,10 +13,10 @@
     "shortDescription": {
       "type": "string"
     },
-    "lessons": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::lesson.lesson"
+    "lesson": {
+      "type": "component",
+      "repeatable": true,
+      "component": "lesson.lesson"
     }
   }
 }

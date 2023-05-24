@@ -6,29 +6,10 @@
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "description": {
-      "type": "string"
-    },
-    "richText": {
-      "type": "richtext"
-    },
-    "mainImage": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "mainVideo": {
-      "allowedTypes": [
-        "videos"
-      ],
-      "type": "media",
-      "multiple": false
+    "lection": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::lection.lection"
     }
   }
 }

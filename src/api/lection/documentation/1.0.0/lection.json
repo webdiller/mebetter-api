@@ -1,5 +1,5 @@
 {
-  "/lessons": {
+  "/lections": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/LessonListResponse"
+                "$ref": "#/components/schemas/LectionListResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "Lesson"
+        "Lection"
       ],
       "parameters": [
         {
@@ -169,7 +169,7 @@
           }
         }
       ],
-      "operationId": "get/lessons"
+      "operationId": "get/lections"
     },
     "post": {
       "responses": {
@@ -178,7 +178,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/LessonResponse"
+                "$ref": "#/components/schemas/LectionResponse"
               }
             }
           }
@@ -235,23 +235,23 @@
         }
       },
       "tags": [
-        "Lesson"
+        "Lection"
       ],
       "parameters": [],
-      "operationId": "post/lessons",
+      "operationId": "post/lections",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/LessonRequest"
+              "$ref": "#/components/schemas/LectionRequest"
             }
           }
         }
       }
     }
   },
-  "/lessons/{id}": {
+  "/lections/{id}": {
     "get": {
       "responses": {
         "200": {
@@ -259,7 +259,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/LessonResponse"
+                "$ref": "#/components/schemas/LectionResponse"
               }
             }
           }
@@ -316,7 +316,7 @@
         }
       },
       "tags": [
-        "Lesson"
+        "Lection"
       ],
       "parameters": [
         {
@@ -330,7 +330,7 @@
           }
         }
       ],
-      "operationId": "get/lessons/{id}"
+      "operationId": "get/lections/{id}"
     },
     "put": {
       "responses": {
@@ -339,7 +339,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/LessonResponse"
+                "$ref": "#/components/schemas/LectionResponse"
               }
             }
           }
@@ -396,7 +396,7 @@
         }
       },
       "tags": [
-        "Lesson"
+        "Lection"
       ],
       "parameters": [
         {
@@ -410,13 +410,13 @@
           }
         }
       ],
-      "operationId": "put/lessons/{id}",
+      "operationId": "put/lections/{id}",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/LessonRequest"
+              "$ref": "#/components/schemas/LectionRequest"
             }
           }
         }
@@ -487,7 +487,7 @@
         }
       },
       "tags": [
-        "Lesson"
+        "Lection"
       ],
       "parameters": [
         {
@@ -501,7 +501,7 @@
           }
         }
       ],
-      "operationId": "delete/lessons/{id}"
+      "operationId": "delete/lections/{id}"
     }
   }
 }
