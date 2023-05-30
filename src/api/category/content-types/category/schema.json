@@ -13,26 +13,25 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "slug": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "mainImage": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "courses": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::course.course",
       "mappedBy": "category"
+    },
+    "background": {
+      "type": "component",
+      "repeatable": false,
+      "component": "background.background",
+      "required": true
     }
   }
 }

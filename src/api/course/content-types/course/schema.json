@@ -13,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "slug": {
       "type": "string",
@@ -21,12 +22,14 @@
       "unique": true
     },
     "description": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "background": {
       "type": "component",
       "repeatable": false,
-      "component": "background.background"
+      "component": "background.background",
+      "required": true
     },
     "author": {
       "type": "relation",
@@ -41,13 +44,16 @@
       "inversedBy": "courses"
     },
     "courseLenght": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "courseTime": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "shortDescription": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "proposals": {
       "type": "relation",

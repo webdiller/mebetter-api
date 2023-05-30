@@ -4,7 +4,8 @@
   "info": {
     "singularName": "lection",
     "pluralName": "lections",
-    "displayName": "Lection"
+    "displayName": "Lesson",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,6 +19,27 @@
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "video": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "background": {
+      "type": "component",
+      "repeatable": false,
+      "component": "background.background"
+    },
+    "shortDescription": {
+      "type": "text"
+    },
+    "masterDescription": {
+      "type": "text"
+    },
+    "content": {
+      "type": "richtext"
     }
   }
 }

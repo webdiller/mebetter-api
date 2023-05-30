@@ -11,12 +11,13 @@
       "required": true
     },
     "shortDescription": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
-    "lesson": {
-      "type": "component",
-      "repeatable": true,
-      "component": "lesson.lesson"
+    "lessons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::lection.lection"
     }
   }
 }
