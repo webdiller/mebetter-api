@@ -72,11 +72,21 @@
       "mappedBy": "author"
     },
     "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "shortDescription": {
+      "type": "text"
+    },
+    "historyCourses": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::course.course",
+      "inversedBy": "users"
     }
   }
 }

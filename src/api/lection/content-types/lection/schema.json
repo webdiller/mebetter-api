@@ -21,11 +21,12 @@
       "unique": true
     },
     "video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "videos"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "background": {
       "type": "component",
@@ -40,6 +41,10 @@
     },
     "content": {
       "type": "richtext"
+    },
+    "timeDuration": {
+      "type": "string",
+      "required": true
     }
   }
 }
