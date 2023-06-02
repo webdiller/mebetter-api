@@ -87,6 +87,9 @@
       "relation": "manyToMany",
       "target": "api::course.course",
       "inversedBy": "users"
+    },
+    "fullName": {
+      "type": "string"
     }
   }
 }
