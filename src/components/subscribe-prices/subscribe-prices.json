@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_subscribe_prices_subscribe_prices",
+  "info": {
+    "displayName": "subscribePrices"
+  },
+  "options": {},
+  "attributes": {
+    "pricePerMonth": {
+      "type": "string",
+      "required": true
+    },
+    "pricePerSixMonth": {
+      "type": "string",
+      "required": true
+    },
+    "pricePerYear": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

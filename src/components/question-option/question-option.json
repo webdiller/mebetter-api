@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_question_option_question_options",
+  "info": {
+    "displayName": "QuestionOption",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "isCorrect": {
+      "type": "boolean"
+    }
+  }
+}

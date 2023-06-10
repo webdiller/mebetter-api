@@ -45,6 +45,12 @@
     "timeDuration": {
       "type": "string",
       "required": true
+    },
+    "quiz": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::quiz.quiz",
+      "inversedBy": "lessons"
     }
   }
 }

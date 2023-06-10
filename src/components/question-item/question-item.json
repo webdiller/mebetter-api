@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_question_item_question_items",
+  "info": {
+    "displayName": "QuestionItem",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "question-option.question-option"
+    },
+    "descriptionCorrect": {
+      "type": "text"
+    },
+    "descriptionIncorrect": {
+      "type": "text"
+    },
+    "title": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

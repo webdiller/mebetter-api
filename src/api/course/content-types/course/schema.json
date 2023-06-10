@@ -55,12 +55,6 @@
       "type": "text",
       "required": true
     },
-    "proposals": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::proposal.proposal",
-      "mappedBy": "course"
-    },
     "weeks": {
       "type": "dynamiczone",
       "components": [
@@ -73,6 +67,18 @@
       "relation": "manyToMany",
       "target": "plugin::users-permissions.user",
       "mappedBy": "historyCourses"
+    },
+    "proposal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::proposal.proposal",
+      "mappedBy": "course"
+    },
+    "prices": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subscribe-prices.subscribe-prices",
+      "required": true
     }
   }
 }
